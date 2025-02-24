@@ -666,7 +666,7 @@ body {
 .images {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 images per row */
-    gap: 25px;
+    gap: 15px 15px;
     margin-top: 20px;
     justify-content: center;
     align-items: center;
@@ -674,8 +674,8 @@ body {
 
 .images img {
     width: 100%;
-    max-width: 250px; /* Set a fixed maximum width */
-    height: 200px; /* Set a fixed height */
+    max-width: 350px; /* Set a fixed maximum width */
+    height: 250px; /* Set a fixed height */
     object-fit: cover; /* Ensures the image covers the box without distortion */
     border-radius: 10px;
 }
