@@ -22,7 +22,7 @@ body {
     z-index: 1000;
 }
 
-.menu-icon {
+.menu {
     width: 40px; /* Adjust based on your preference */
     height: 40px;
     display: flex;
@@ -31,7 +31,7 @@ body {
     cursor: pointer; /* Makes it clickable */
 }
 
-.menu-icon .icon {
+.menu .icon {
     width: 100%;  /* Makes it fit the div */
     height: auto;
 }
@@ -60,8 +60,8 @@ body {
     background-color: #065f74;
 }
 
-/* Hero Section */
 .hero {
+  
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -72,13 +72,30 @@ body {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-top: 80px;
+    position: relative;
 }
 
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Ensures the content appears above the overlay */
+}
 
 .hero-content h1 {
     font-size: 36px;
     font-weight: bold;
 }
+
 
 /* Featured Amenities Section */
 .featured-amenities {
@@ -595,3 +612,70 @@ body {
     margin-top: 10px;
     font-size: 16px;
   }
+
+  /* GYM SECTION */
+  
+  body {
+    margin: 0;
+    text-align: center;
+}
+
+.top-section {
+    background-color: #0c677d;
+    color: white;
+    padding: 40px;
+}
+
+.title {
+    font-size: 28px;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 5px;
+    color: #AD9358;
+}
+
+.description {
+    font-size: 14px;
+    max-width: 600px;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+.bottom-section {
+    background-color: #f8f5ef;
+    padding: 40px;
+}
+
+.gym-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    color: #644c3b;
+}
+
+.gym-subheading {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #9c866f;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    gap: 25px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.images img {
+    width: 100%;
+    max-width: 250px; /* Set a fixed maximum width */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image covers the box without distortion */
+    border-radius: 10px;
+}
