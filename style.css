@@ -1,0 +1,597 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: white;
+    color: #097C99;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.menu-icon {
+    width: 40px; /* Adjust based on your preference */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Makes it clickable */
+}
+
+.menu-icon .icon {
+    width: 100%;  /* Makes it fit the div */
+    height: auto;
+}
+
+
+.logo img {
+    height: 90px;
+}
+
+.book-now {
+    background-color: #097C99;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50px;
+    transition: background 0.3s ease;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.book-now:hover {
+    background-color: #065f74;
+}
+
+/* Hero Section */
+.hero {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 80px;
+}
+
+
+.hero-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Featured Amenities Section */
+.featured-amenities {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #097C99; /* Updated background color */
+    color: white;
+}
+
+.featured-amenities h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* Amenities Icons Layout */
+.amenities-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Single Amenity Item */
+.amenity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 160px;
+}
+
+/* Icon Styling */
+.amenity img {
+    width: 60px;  /* Adjust icon size */
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+/* Title Below Icons */
+.amenity h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #AD9358;
+}
+
+/* Description Below Title */
+.amenity p {
+    font-size: 16px;
+    text-align: center;
+    max-width: 140px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .amenities-icons {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .amenity {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+
+/* Footer */
+footer {
+    background: #166781;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section .social-icons {
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+}
+
+.footer-section .social-icons a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.footer-section .social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .amenities-icons {
+        flex-direction: column;
+    }
+
+    .amenity {
+        margin-bottom: 30px;
+    }
+}
+/* Rooms Section */
+.rooms-section {
+    background-color: #FFF7EF;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Room Navigation Bar */
+.room-nav {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px; /* Adjust spacing between items */
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    color: #333;
+    font-weight: bold;
+}
+
+.icon {
+    background-color: rgba(245, 222, 179, 0.3); /* Light gold background */
+    padding: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.icon img {
+    width: 25px;
+    height: 25px;
+}
+
+
+/* Section Title */
+.section-title {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 700px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    color: #9C6B4E;
+}
+
+.section-title p {
+    font-size: 18px;
+    color: #6D5D4B;
+}
+
+/* Room Display */
+.room-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Room Info (Right Side) */
+.room-info {
+    width: 40%;
+    text-align: left;
+}
+
+.room-info h3 {
+    font-size: 26px;
+    color: #9C6B4E;
+}
+
+.room-info p {
+    font-size: 16px;
+    color: #6D5D4B;
+    margin: 10px 0;
+}
+
+.room-details {
+    font-size: 16px;
+    color: #333;
+}
+
+.room-details .icon {
+    width: 20px;  /* Adjust size as needed */
+    height: auto;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+
+.book-room {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #9C6B4E;
+    transition: color 0.3s ease-in-out;
+}
+
+.book-room:hover {
+    color: #6D5D4B;
+}
+
+/* Room Slider (Left Side) */
+.room-slider {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.room-slider img {
+    width: 500px;  /* Set a fixed width */
+    height: 350px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image is cropped, not stretched */
+    border-radius: 10px;
+}
+
+
+/* Slider Buttons */
+.room-slider .prev, .room-slider .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    border-radius: 50%;
+}
+
+.room-slider .prev {
+    left: 10px;
+}
+
+.room-slider .next {
+    right: 10px;
+}
+
+.room-slider .prev:hover, .room-slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .room-display {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .room-info {
+        width: 90%;
+    }
+
+    .room-slider {
+        width: 90%;
+    }
+}
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/Moneta-Regular.woff') format('woff2'),
+         url('fonts/TafelSansPro-Regular.woff') format('woff'),
+         url('fonts/my-font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply the custom font to everything */
+body {
+    font-family: 'MyCustomFont';
+}
+
+/* Restaurant Navbar */
+.restaurant-nav {
+    background-color: #097C99;
+    padding: 10px;
+    text-align: center;
+}
+
+.restaurant-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.restaurant-nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.restaurant-nav .restaurant-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.restaurant-nav .restaurant-link:hover {
+    text-decoration: underline;
+}
+
+/* About Us Section */
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background-color: #FFF7EF;
+}
+
+.left-content {
+    width: 50%;
+    text-align: left;
+}
+
+.left-content h1 {
+    font-size: 36px;
+    color: #AD9358;
+}
+
+.left-content h2 {
+    font-size: 24px;
+    color: #574418;
+}
+
+.left-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.right-content {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.chef-image {
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+    
+}
+
+.menu-btn {
+    background-color: #FFF;
+    color: #097C99;
+    border: none;
+    padding: 9px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50px;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+.menu-btn:hover {
+    background-color: #065f74;
+}
+
+.dining-section{
+    background-color: #097C99;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+.dining-section h1 {
+    color: #fff;
+    font-size: 36px;
+}
+
+.dining-section h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.dining-section p {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+  .food-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .food-item {
+    text-align: center;
+  }
+  
+  .food-item img {
+    width: 233px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .food-item p {
+    color: white;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .food-item h1 {
+    color: white;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .lounge-section {
+    background-color: #FFF7EF;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .lounge-section h1 {
+    color: #AD9358;
+    font-size: 36px;
+  }
+  
+  .lounge-section h2 {
+    color: #097C99;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .lounge-section p {
+    color: #574418;
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 1.6;
+  }
+  
+  .cocktail-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .cocktail-item {
+    text-align: center;
+  }
+  
+  .cocktail-item img {
+    width: 233px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .cocktail-item p {
+    color: #574418;
+    margin-top: 10px;
+    font-size: 16px;
+  }

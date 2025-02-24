@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ekhaya Luxury Resort</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="menu-icon">
+                <img src="icons/menu.png" alt="Menu" class="icon">
+            </div>
+
+            <div class="logo">
+                <img src="img/ekhaya_logo-removebg-preview.png" alt="Ekhaya Luxury Resort">
+            </div>
+            <button class="book-now">Book Now</button>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero" style="background-image: url('img/room.jpg');">
+            <div class="hero-content">
+                <h1>Rooms & Ensuites</h1>
+            </div>
+        </section>
+
+
+        <!-- Featured Amenities Section -->
+        <section class="featured-amenities">
+            <h2>Featured Amenities</h2>
+            <div class="amenities-icons">
+                <div class="amenity">
+                    <img src="icons/wifi-signal (1).png" alt="Wifi Icon">
+                    <h3>Free Wi-Fi</h3>
+                    <p>Relax and unwind in our luxurious wifi-signal.</p>
+                </div>
+                <div class="amenity">
+                    <img src="icons/shield.png" alt="security Icon">
+                    <h3>24/7 Security</h3>
+                    <p>Indulge in a world-class spa experience.</p>
+                </div>
+                <div class="amenity">
+                    <img src="icons/restaurant (1).png" alt="services Icon">
+                    <h3>Guest Services</h3>
+                    <p>Stay fit with our fully equipped gym.</p>
+                </div>
+                <div class="amenity">
+                    <img src="icons/swimming (1).png" alt="Security Icon">
+                    <h3>Swimming</h3>
+                    <p>Enjoy a safe and secure environment.</p>
+                </div>
+                <div class="amenity">
+                    <img src="icons/speed-boat (1).png" alt="WiFi Icon">
+                    <h3>Speed-boat</h3>
+                    <p>Stay connected with fast, reliable Wi-Fi.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Rooms Section -->
+        <section class="rooms-section">
+            <!-- Navigation Bar -->
+            <nav class="room-nav">
+                <div class="nav-item">
+                    <div class="icon"><img src="icons/bed.png" alt="Deluxe Room Icon"></div>
+                    <span>Deluxe Room</span>
+                </div>
+                <div class="nav-item">
+                    <div class="icon"><img src="icons/bed.png" alt="Family Room Icon"></div>
+                    <span>Family Room</span>
+                </div>
+                <div class="nav-item">
+                    <div class="icon"><img src="icons/bed.png" alt="Suite Icon"></div>
+                    <span>Suite</span>
+                </div>
+                <div class="nav-item">
+                    <div class="icon"><img src="icons/bed.png" alt="Apartment Room Icon"></div>
+                    <span>Apartment Room</span>
+                </div>
+            </nav>
+            
+            <!-- Section Heading -->
+            <div class="section-title">
+                <h2>Our Luxury Resort</h2>
+                <p>Deeprock Hotel offers 30 rooms with modern comforts, including soundproof windows, WiFi, a work area,
+                    an electronic safe, air conditioning, and a flat-screen TV with DSTV.</p>
+            </div>
+
+            <!-- Room Display -->
+            <div class="room-display">
+                <!-- Room Images with Slider -->
+                <div class="room-slider">
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <img id="room-image" src="img/room1.jpg" alt="Deluxe Room">
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+
+                <!-- Room Info -->
+                <div class="room-info">
+                    <h3 id="room-title">Deluxe Room</h3>
+                    <p id="room-description">Blends elegance and comfort, featuring stylish décor, plush bedding, and
+                        modern amenities for a refined stay.</p>
+                    <p class="room-details">
+                        <span><img src="icons/people.png" alt="Max Guests" class="icon"> Max guests: 2</span><br>
+                        <span><img src="icons/bed.png" alt="Bed Size" class="icon"> Bed size(s): King / Queen</span>
+                    </p>
+
+                    <a href="#" class="book-room">Book Room</a>
+                </div>
+            </div>
+
+            <!-- Second Room -->
+            <div class="room-display">
+                <div class="room-slider">
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <img id="room-image-2" src="img/room1.jpg" alt="Deluxe Room">
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+
+                <div class="room-info">
+                    <h3 id="room-title-2">Deluxe Room</h3>
+                    <p id="room-description-2">Blends elegance and comfort, featuring stylish décor, plush bedding, and
+                        modern amenities for a refined stay.</p>
+                    <p class="room-details">
+                        <span><img src="icons/people.png" alt="Max Guests" class="icon"> Max guests: 2</span><br>
+                        <span><img src="icons/bed.png" alt="Bed Size" class="icon"> Bed size(s): King / Queen</span>
+                    </p>
+                    <a href="#" class="book-room">Book Room</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Our History</a></li>
+                    </ul>
+                    <div class="logo">
+                        <img src="img/ekhaya_logo-removebg-preview.png" alt="Ekhaya Luxury Resort">
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Rooms & Suites</a></li>
+                        <li><a href="#">Restaurant & Bars</a></li>
+                        <li><a href="#">Gym & Amenities</a></li>
+                        <li><a href="#">Meetings & Events</a></li>
+                        <li><a href="#">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="#">+265993934988</a></li>
+                        <li><a href="#">bookings@ekhayaluxuryresort.com</a></li>
+                        <li><a href="#">Mangochi</a></li>
+                        <li><a href="#">M10 Chimatiro</a></li>
+                        <li><a href="#">Malawi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><img src="icons/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="icons/instagram.png" alt="Instagram"></a>
+                        <a href="#"><img src="icons/twitter (1).png" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+    </html>
