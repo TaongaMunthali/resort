@@ -1,6 +1,6 @@
 
 body {
-    font-family: Arial, sans-serif;
+    
     margin: 0;
     padding: 0;
     color: #333;
@@ -60,6 +60,7 @@ body {
     background-color: #065f74;
 }
 
+/* hero section */
 .hero {
   
     background-position: center;
@@ -512,6 +513,7 @@ body {
     background-color: #065f74;
 }
 
+/* Dining section */
 .dining-section{
     background-color: #097C99;
     text-align: center;
