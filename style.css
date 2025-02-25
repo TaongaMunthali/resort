@@ -169,7 +169,7 @@ body {
 
 /* Footer */
 footer {
-    background: #166781;
+    background: #097C99;
     padding: 40px 0;
 }
 
@@ -640,7 +640,7 @@ body {
     color: #AD9358;
 }
 
-.description {
+.descriptionn {
     font-size: 14px;
     max-width: 600px;
     margin: 10px auto;
@@ -680,4 +680,206 @@ body {
     height: 250px; /* Set a fixed height */
     object-fit: cover; /* Ensures the image covers the box without distortion */
     border-radius: 10px;
+}
+
+ /* meetings and events*/
+
+.event-info {
+    background-color: #FFF7EF;
+    padding: 4rem 2rem;
+}
+
+.event-info h2 {
+    font-size: 2.8rem;
+    text-align: center;
+    color: #AD9358;
+    margin-bottom: 1rem;
+}
+
+.event-info p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #574418;
+    margin-bottom: 3rem;
+}
+
+/* Layout for event spaces */
+.spaces {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.space {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #FFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.space:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image container styling */
+.image-container {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.event-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.space:hover .event-image {
+    transform: scale(1.05);
+}
+
+/* Description Styling */
+.description {
+    padding: 2rem;
+    color: #574418;
+}
+
+.description h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #AD9358;
+}
+
+.description p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.read-more {
+    font-size: 1rem;
+    color: #AD9358;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #8C7040;
+}
+
+/* Reverse Layout for Board Meetings */
+.space-content.reverse {
+    flex-direction: row-reverse;
+}
+
+.space-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.services {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    color: #AD9358;
+    margin-bottom: 1rem;
+}
+
+.services p {
+    font-size: 1.2rem;
+    color: #574418;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.service-item {
+    background-color: #FFF7EF;
+    padding: 2rem;
+    width: 200px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px); /* Hover effect for interactivity */
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #AD9358;
+    margin-bottom: 1rem;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    color: #574418;
+    margin-bottom: 1rem;
+}
+
+.service-item p {
+    font-size: 1.1rem;
+    color: #574418;
+}
+
+.services ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.services ul li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    color: #574418;
+}
+
+.services ul li:before {
+    content: "•"; 
+    font-size: 1.5rem;
+    color: #AD9358;
+    position: absolute;
+    left: -1.5rem;
+    top: 0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .space-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .space-content.reverse {
+        flex-direction: column-reverse;
+    }
+
+    .event-info p {
+        font-size: 1rem;
+    }
 }
